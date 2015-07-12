@@ -131,9 +131,9 @@ public interface BaseDao<T> {
     adapter.setFiled("startTime", startTime).setFiled("endTime", endTime);
     
 ```
-    在xml配置中调用<br/>
+    在xml配置中调用
     
-```
+```xml
     
     <if test="dynamicFileds_startTime != null ">
           and  ${tableName}.${column.columnName} &gt;= #${boxBracket}dynamicFileds_startTime}
