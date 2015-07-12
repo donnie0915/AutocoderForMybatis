@@ -1,4 +1,4 @@
-如果你有遇到什么问题可以联系我：hjp22222@gmail.com <br/>
+如果你有遇到什么问题可以联系我：hjp222@gmail.com <br/>
 
 此项目最初出自龙浩的[autocoder](https://github.com/hoorace/autocoder),<br/>
 他的只支持到ibatis，未有支持mybatis，我在autocoder做了一下修改和简化，<br/>
