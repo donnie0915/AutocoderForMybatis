@@ -125,17 +125,22 @@ public interface BaseDao<T> {
 ```
 2：为了解决DO和VO的导致JavaBean内容重复的问题，设计上考虑使用动态字段来传值，提高系统可拓展性。
     set动态字段：<br/>
+    
     ```
     adapter.setFiled("startTime", startTime).setFiled("endTime", endTime);
+    
     ```
     在xml配置中调用<br/>
+    
     ```xml
+    
     <if test="dynamicFileds_startTime != null ">
           and  ${tableName}.${column.columnName} &gt;= #${boxBracket}dynamicFileds_startTime}
     </if>
     <if test="dynamicFileds_endTime != null ">
        and	${tableName}.${column.columnName} &lt;= #${boxBracket}dynamicFileds_endTime}
     </if>
+    
     ```
 3：update都是需要直接修改xml来完成，生成的内容仅供参考。<br/>
 
