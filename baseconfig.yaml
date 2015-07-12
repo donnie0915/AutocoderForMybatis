@@ -1,0 +1,38 @@
+name: donnie
+version: 1.0.1
+
+package:
+
+- base: com.okhqb.business.goodsmgr
+  dao: dao
+  domain: domain
+  service: service
+  serviceImpl: service.impl
+  ignorePrefix: ft_
+  ignoreSuffix:
+  targetPath: /Users/rainysun/jar
+  sqlmapOnly: false
+
+sql:
+- type: mysql
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1/okhqb
+  username: root
+  password: test
+  database: okhqb
+  #multi-table use "," split , eg: user,feed
+  tables: user
+
+#-- config set 
+spring_config_name: spring-dao-config.xml
+ibatis_config_name: ibatis-config.xml
+
+#-- dao set
+base_dao: com.hqb360.common.dao.BaseDao
+abstract_spring_dao_test: com.okhqb.test.base.AbstractSpringDaoTest
+
+default_list_adapter: com.hqb360.common.dao.adapter.DefaultListAdapter
+list_adapter: com.hqb360.common.dao.adapter.ListAdapter
+default_find_adapter: com.hqb360.common.dao.adapter.DefaultFindAdapter
+find_adapter: com.hqb360.common.dao.adapter.FindAdapter
+
