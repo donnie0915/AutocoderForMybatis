@@ -4,6 +4,8 @@
 他的只支持到ibatis，未有支持mybatis，我在autocoder做了一下修改和简化，<br/>
 目前已支持MyBatis<br/>
 
+依赖的项目： [common-dao](https://github.com/hoorace/common-dao)
+
 ### 注意
 1.必须配置JAVA_HOME与MAVEN_HOME<br/>
 2.在windows下运行run.bat ,在liunx系统下运行run.sh<br/>
