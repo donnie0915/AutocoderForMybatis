@@ -36,7 +36,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 提供Ibatis数据库的基本操作
+ * 提供MyBatis数据库的基本操作
  *
  * Date: 15-6-16
  * @param <T>
